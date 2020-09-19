@@ -2,7 +2,7 @@
   "name": "ms_sql_conx_apps",
   "version": "1.0.0",
   "description": "",
-  "main": "apps.js",
+  "main": "index.js",
   "dependencies": {
     "express": "^4.17.1",
     "mssql": "^6.2.2"
