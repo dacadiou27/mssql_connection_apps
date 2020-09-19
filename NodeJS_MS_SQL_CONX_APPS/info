@@ -1,0 +1,14 @@
+//npm init
+//npm install @hapi/hapi
+//npm install @hapi/hapi@19 
+
+during development only
+help to highlight JS error
+//npm install --save-dev eslint eslint-config-reverentgeek
+open the read me for a specific package
+//npm docs eslint-config-reverentgeek
+pseudo setup environnement varible for windows
+//npm install dotenv@8
+
+//npm install mssql@6
+//npm install fs-extra@9
