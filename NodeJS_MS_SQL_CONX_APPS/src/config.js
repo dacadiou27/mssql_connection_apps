@@ -14,9 +14,9 @@ const {
     SQL_DATABASE,
     SQL_USER,
     SQL_PASSWORD,
-    OKTA_ORG_URL,
-    OKTA_CLIENT_ID,
-    OKTA_CLIENT_SECRET,
+    //OKTA_ORG_URL,
+    //OKTA_CLIENT_ID,
+    //OKTA_CLIENT_SECRET,
 } = process.env;
 
 const sqlEncrypt = process.env.SQL_ENCRYPT == "true";
@@ -25,13 +25,13 @@ assert(PORT,"PORT is required");
 assert(HOST,"HOST is required");
 assert(HOST_URL,"HOST_URL is required");
 assert(COOKIE_ENCRYPT_PWD,"COOKIE_ENCRYPT_PWD is required");
-//assert(SQL_SERVER,"SQL_SERVER is required");
-//assert(SQL_DATABASE,"SQL_DATABASE is required");
-//assert(SQL_USER,"SQL_USER is required");
-//assert(SQL_PASSWORD," SQL_PASSWORD is required");
-//
-//
-//
+assert(SQL_SERVER,"SQL_SERVER is required");
+assert(SQL_DATABASE,"SQL_DATABASE is required");
+assert(SQL_USER,"SQL_USER is required");
+assert(SQL_PASSWORD," SQL_PASSWORD is required");
+//assert(OKTA_ORG_URL," OKTA_ORG_URL is required");
+//assert(OKTA_CLIENT_ID," OKTA_CLIENT_ID is required");
+//assert(OKTA_CLIENT_SECRET," OKTA_CLIENT_SECRET is required");
 
 
 module.export = {
@@ -49,9 +49,9 @@ module.export = {
             enableArithAbort: true
         }
     },
-    okta: {
-        url: OKTA_ORG_URL,
-        clientId: OKTA_CLIENT_ID,
-        clientSecret: OKTA_CLIENT_SECRET
-    }
+    //okta: {
+    //    url: OKTA_ORG_URL,
+    //    clientId: OKTA_CLIENT_ID,
+    //    clientSecret: OKTA_CLIENT_SECRET
+    //}
 };
