@@ -1,0 +1,10 @@
+SELECT [id]
+    , [title]
+    , [description]
+    , [startdate]
+    , [endDate]
+    , [endTime]
+FROM [dbo].[events]
+WHERE [userId]=@userId
+ORDER BY
+    [startDate], [startTime]
